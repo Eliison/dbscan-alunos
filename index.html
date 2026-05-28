@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>DBSCAN - Classificador de Alunos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Classificador de Alunos</h1>
+
+    <label>Nota Média</label>
+    <input type="number" id="nota" placeholder="Ex: 8">
+
+    <label>Faltas</label>
+    <input type="number" id="faltas" placeholder="Ex: 5">
+
+    <label>Participação</label>
+    <select id="participacao">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+    </select>
+
+    <button onclick="classificarAluno()">
+        Classificar
+    </button>
+
+    <div id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
